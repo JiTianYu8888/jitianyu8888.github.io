@@ -1,232 +1,464 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<link rel="icon" href="./rec/favicon.ico">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<script src="JavaScript/about-main.js"></script>
-<title>Goutou Studio - 关于</title>
-<style>
-
-body {
-      background: linear-gradient(-45deg, #0920ec, #bd1bcc, #1512c7, #ff00bf);
-      background-size: 400% 400%;
-      animation: gradientAnimation 15s ease infinite;
-      font-family: 'Inter', sans-serif;
-   }
-@keyframes gradientAnimation {
-            0% {
-                background-position: 0% 50%;
-            }
-            25% {
-                background-position: 100% 50%;
-            }
-            50% {
-                background-position: 0% 50%;
-            }
-            75% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-ul {
-    z-index:999;
-    display: flex;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000000;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin-left:-8px;
-    background: rgba(255, 255, 255, 0.418);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 12px 18px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #0000001e;
-}
-
-.active {
-    background-color: #01fcc5;
-}
-
-.card {
-    width: 80%;
-    height: auto;
-    padding: 2rem;
-    border-radius: 1rem;
-	background: rgba(255, 255, 255, .7);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-}
-
-.card{
-  backdrop-filter: blur(6px) saturate(161%);
-  -webkit-backdrop-filter: blur(6px) saturate(161%);
-  background-color: rgba(255,254,161,0.33);
-  border-radius: 21px;
-  border: 1px solid rgba(209, 213, 219, 0.3)
-}
-
-.card-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: .5rem;
-  font-size: 1.5rem;
-}
-
-a {
-  color: #4d4ae8;
-  text-decoration: none;
-}
-
-div{
-    margin: 5% auto;
-}
-
-p{
-    font-size: 1.3rem;  
-}
-
-.vertical-line{
-    display: inline-block;
-    border-left: 1px solid #ccc;
-    margin: 0px;
-    height: 48px;
-}
-
-.demo1 {
-	border-left: 2px solid #0400ff;
-	border-top: 2px solid #0004ff;
-	border-right: 3px solid #000;
-	border-bottom: 3px solid #000;  
-}
-
-.to {
-  text-shadow: 1px 1px 1px black,-1px -1px 1px white;
-}
-
-.coin {
-	text-align: center;
-	margin: 0 auto;
-}
-
-  .footer{
-        height: 150px;
-        text-align: center;
-        font-size: 16px;
-        padding: 0px 100px;
-        position: relative;
-    }
-    .footer{
-      cursor: pointer;
-    }
-    .copyright{
-      font-size: 12px;
-    }
-    .info{
-      font-size: 14px;
-      color: #000000;
-      line-height: 25px;
-    }
-    .footer .scroll{
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border-radius: 5px;
-      border:2px solid #eaeaea;
-      /* background-color: rgba(216, 16, 109,0.6); */
-      position: absolute;
-      left: 5%;
-      top: -25px;
-      z-index: 10;
-      animation: scrollA infinite 20s linear alternate;
-    }
-    @keyframes scrollA {
-      0% {left: 5%;transform: rotate(180deg);};
-      10% {left: 5%;transform: rotate(270deg);}
-      20% {left: 5%;transform: rotate(450deg);}
-      25% {left: 10%;transform: rotate(540deg);}
-      30% {left: 20%;transform: rotate(720deg);}
-      35% {left: 30%;transform: rotate(900deg);}
-      40% {left: 40%;transform: rotate(1080deg);}
-      45% {left: 50%;transform: rotate(1260deg);}
-      50% {left: 60%;transform: rotate(1440deg);}
-      55% {left: 70%;transform: rotate(1620deg);}
-      60% {left: 80%;transform: rotate(1800deg);}
-      80% {left: 90%;transform: rotate(2610deg);}
-      90% {left: 90%;transform: rotate(2340deg);}
-      100% {left: 90%;transform: rotate(2520deg);}
-    }
-
-</style>
-</head>
-<body>
-
-<ul>
-    <li><a class="active demo1 to">Goutou Studio</a></li>
-    <li><a href="https://discord.gg/TEFHeQqe">Discord</a></li>
-    <li><a href="#about-jitianyu">社区和JiTianYu初期</a></li>
-    <li><a href="#about-highproject">唯一活跃的项目</a></li>
-    <li><a href="https://jitianyu.sdos.top">回去</a></li>
-</ul>
-
-<div class="card demo1">
-    <h3 class="card-title">关于社区和经历：</h3>
-	<a name="about-jitianyu" style="font-size: 1.6rem;"><strong>社区和JiTianYu初期：</strong></a>
-	<p>Goutou Studio社区成立于2022年7月， 由JiTianYu一人创建。初期时只有JiTianYu一人尝试开发软件，到了后期学会开发一些易语言做的小玩意。<p>
-	<div></div>
-	
-	<a name="about-highproject" style="font-size: 1.6rem;"><strong>唯一活跃的项目：</strong></a>
-	<p>每一个程序员的梦想，大概是开发一个属于自己的操作系统吧，但是很多人都失败了。ViudiraTech社区的MicroFish凭借自己优越的汇编基础，开发了一个"操作系统"，
-	名叫“ViudiraOS 0.0.1”。一开始MicroFish并不看好这个东西，只是拿来玩玩。2023年4月30日，他借鉴了“MikeOS”的底层，开发出了第一个真正意义的操作系统。名叫
-	“VimdropOS 0.1.0”。并且短时间内更新了0.5.0和1.0.0的版本。JiTianYu的经历大概是2023年7月份的时候，JiTianYu了解了30天自制操作系统这本书。从此以后，JiTianYu开始开发操作系统，但是一个突如其来的bug让JiTianYu失败了。不过
-	12月份这个时候的某一天，JiTianYu正在玩“都市天际线”，突然Microfish给JiTianYu发了一条私信，从此JiTianYu的第二次制作操作系统之路也正式开始，开发故事仍在继续。</p>
-	<div></div>
-	
-</div>
-
-<div class='footer'>
-      <span class="scroll"></span>
-      <!-- <span id="star-five" class="scroll"></span> -->
-      <el-divider></el-divider>
-      <span>网站中的所有商标等均由ViudiraTech和GoutouStudio所有。</span>
-      <el-divider direction="vertical"></el-divider>
-      <br/>
-      <br/>
-      <span class="copyright">Copyright 2020-2024 Goutou Studio & ViudiraTech.</span>
-      <el-drawer
-        :visible.sync="drawer"
-        :direction="direction"
-        :before-close="handleClose">
-        <p class='info'>
-          <i class="el-icon-phone"></i>需要更多信息请咨询我们！<br/>
-          <i class="el-icon-message"></i>"每个计算机科技爱好者的聚集之地"<br/>
-        </p>
-      </el-drawer>
-	</div>
-</body>
-</html>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<link rel="icon" href="./rec/favicon.ico">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="JavaScript/about-main.js"></script>
+
+<title>Goutou Studio - 关于</title>
+
+<style>
+
+
+
+body {
+
+      background: linear-gradient(-45deg, #0920ec, #bd1bcc, #1512c7, #ff00bf);
+
+      background-size: 400% 400%;
+
+      animation: gradientAnimation 15s ease infinite;
+
+      font-family: 'Inter', sans-serif;
+
+   }
+
+@keyframes gradientAnimation {
+
+            0% {
+
+                background-position: 0% 50%;
+
+            }
+
+            25% {
+
+                background-position: 100% 50%;
+
+            }
+
+            50% {
+
+                background-position: 0% 50%;
+
+            }
+
+            75% {
+
+                background-position: 100% 50%;
+
+            }
+
+            100% {
+
+                background-position: 0% 50%;
+
+            }
+
+        }
+
+
+
+ul {
+
+    z-index:999;
+
+    display: flex;
+
+    justify-content: center;
+
+    font-family: 'Inter', sans-serif;
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    background-color: #000000;
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    margin-left:-8px;
+
+    background: rgba(255, 255, 255, 0.418);
+
+	-webkit-backdrop-filter: blur(10px);
+
+	backdrop-filter: blur(10px);
+
+}
+
+
+
+li {
+
+    float: left;
+
+}
+
+
+
+li a {
+
+    display: block;
+
+    color: rgb(0, 0, 0);
+
+    text-align: center;
+
+    padding: 12px 18px;
+
+    text-decoration: none;
+
+}
+
+
+
+li a:hover:not(.active) {
+
+    background-color: #0000001e;
+
+}
+
+
+
+.active {
+
+    background-color: #01fcc5;
+
+}
+
+
+
+.card {
+
+    width: 80%;
+
+    height: auto;
+
+    padding: 2rem;
+
+    border-radius: 1rem;
+
+	background: rgba(255, 255, 255, .7);
+
+	-webkit-backdrop-filter: blur(10px);
+
+	backdrop-filter: blur(10px);
+
+}
+
+
+
+.card{
+
+  backdrop-filter: blur(6px) saturate(161%);
+
+  -webkit-backdrop-filter: blur(6px) saturate(161%);
+
+  background-color: rgba(255,254,161,0.33);
+
+  border-radius: 21px;
+
+  border: 1px solid rgba(209, 213, 219, 0.3)
+
+}
+
+
+
+.card-title {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin-bottom: .5rem;
+
+  font-size: 1.5rem;
+
+}
+
+
+
+a {
+
+  color: #4d4ae8;
+
+  text-decoration: none;
+
+}
+
+
+
+div{
+
+    margin: 5% auto;
+
+}
+
+
+
+p{
+
+    font-size: 1.3rem;  
+
+}
+
+
+
+.vertical-line{
+
+    display: inline-block;
+
+    border-left: 1px solid #ccc;
+
+    margin: 0px;
+
+    height: 48px;
+
+}
+
+
+
+.demo1 {
+
+	border-left: 2px solid #0400ff;
+
+	border-top: 2px solid #0004ff;
+
+	border-right: 3px solid #000;
+
+	border-bottom: 3px solid #000;  
+
+}
+
+
+
+.to {
+
+  text-shadow: 1px 1px 1px black,-1px -1px 1px white;
+
+}
+
+
+
+.coin {
+
+	text-align: center;
+
+	margin: 0 auto;
+
+}
+
+
+
+  .footer{
+
+        height: 150px;
+
+        text-align: center;
+
+        font-size: 16px;
+
+        padding: 0px 100px;
+
+        position: relative;
+
+    }
+
+    .footer{
+
+      cursor: pointer;
+
+    }
+
+    .copyright{
+
+      font-size: 12px;
+
+    }
+
+    .info{
+
+      font-size: 14px;
+
+      color: #000000;
+
+      line-height: 25px;
+
+    }
+
+    .footer .scroll{
+
+      display: inline-block;
+
+      width: 20px;
+
+      height: 20px;
+
+      border-radius: 5px;
+
+      border:2px solid #eaeaea;
+
+      /* background-color: rgba(216, 16, 109,0.6); */
+
+      position: absolute;
+
+      left: 5%;
+
+      top: -25px;
+
+      z-index: 10;
+
+      animation: scrollA infinite 20s linear alternate;
+
+    }
+
+    @keyframes scrollA {
+
+      0% {left: 5%;transform: rotate(180deg);};
+
+      10% {left: 5%;transform: rotate(270deg);}
+
+      20% {left: 5%;transform: rotate(450deg);}
+
+      25% {left: 10%;transform: rotate(540deg);}
+
+      30% {left: 20%;transform: rotate(720deg);}
+
+      35% {left: 30%;transform: rotate(900deg);}
+
+      40% {left: 40%;transform: rotate(1080deg);}
+
+      45% {left: 50%;transform: rotate(1260deg);}
+
+      50% {left: 60%;transform: rotate(1440deg);}
+
+      55% {left: 70%;transform: rotate(1620deg);}
+
+      60% {left: 80%;transform: rotate(1800deg);}
+
+      80% {left: 90%;transform: rotate(2610deg);}
+
+      90% {left: 90%;transform: rotate(2340deg);}
+
+      100% {left: 90%;transform: rotate(2520deg);}
+
+    }
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<ul>
+
+    <li><a class="active demo1 to">Goutou Studio</a></li>
+
+    <li><a href="https://discord.gg/TEFHeQqe">Discord</a></li>
+
+    <li><a href="#about-jitianyu">社区和JiTianYu初期</a></li>
+
+    <li><a href="#about-highproject">唯一活跃的项目</a></li>
+
+    <li><a href="https://goutou.lovepx.team">回去</a></li>
+
+</ul>
+
+
+
+<div class="card demo1">
+
+    <h3 class="card-title">关于社区和经历：</h3>
+
+	<a name="about-jitianyu" style="font-size: 1.6rem;"><strong>社区和JiTianYu初期：</strong></a>
+
+	<p>Goutou Studio社区成立于2022年7月， 由JiTianYu一人创建。初期时只有JiTianYu一人尝试开发软件，到了后期学会开发一些易语言做的小玩意。<p>
+
+	<div></div>
+
+	
+
+	<a name="about-highproject" style="font-size: 1.6rem;"><strong>唯一活跃的项目：</strong></a>
+
+	<p>每一个程序员的梦想，大概是开发一个属于自己的操作系统吧，但是很多人都失败了。ViudiraTech社区的MicroFish凭借自己优越的汇编基础，开发了一个"操作系统"，
+
+	名叫“ViudiraOS 0.0.1”。一开始MicroFish并不看好这个东西，只是拿来玩玩。2023年4月30日，他借鉴了“MikeOS”的底层，开发出了第一个真正意义的操作系统。名叫
+
+	“VimdropOS 0.1.0”。并且短时间内更新了0.5.0和1.0.0的版本。JiTianYu的经历大概是2023年7月份的时候，JiTianYu了解了30天自制操作系统这本书。从此以后，JiTianYu开始开发操作系统，但是一个突如其来的bug让JiTianYu失败了。不过
+
+	12月份这个时候的某一天，JiTianYu正在玩“都市天际线”，突然Microfish给JiTianYu发了一条私信，从此JiTianYu的第二次制作操作系统之路也正式开始，开发故事仍在继续。</p>
+
+	<div></div>
+
+	
+
+</div>
+
+
+
+<div class='footer'>
+
+      <span class="scroll"></span>
+
+      <!-- <span id="star-five" class="scroll"></span> -->
+
+      <el-divider></el-divider>
+
+      <span>网站中的所有商标等均由ViudiraTech和GoutouStudio所有。</span>
+
+      <el-divider direction="vertical"></el-divider>
+
+      <br/>
+
+      <br/>
+
+      <span class="copyright">Copyright 2020-2024 Goutou Studio & ViudiraTech.</span>
+
+      <el-drawer
+
+        :visible.sync="drawer"
+
+        :direction="direction"
+
+        :before-close="handleClose">
+
+        <p class='info'>
+
+          <i class="el-icon-phone"></i>需要更多信息请咨询我们！<br/>
+
+          <i class="el-icon-message"></i>"每个计算机科技爱好者的聚集之地"<br/>
+
+        </p>
+
+      </el-drawer>
+
+	</div>
+
+</body>
+
+</html>
+
