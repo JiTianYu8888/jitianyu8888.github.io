@@ -1,256 +1,512 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<link rel="icon" href="./rec/favicon.ico">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<script src="JavaScript/main.js"></script>
-<title>Goutou Studio</title>
-<style>
-
-body {
-      background: linear-gradient(-45deg, #0920ec, #bd1bcc, #1512c7, #ff00bf);
-      background-size: 400% 400%;
-      animation: gradientAnimation 15s ease infinite;
-      font-family: 'Inter', sans-serif;
-   }
-@keyframes gradientAnimation {
-            0% {
-                background-position: 0% 50%;
-            }
-            25% {
-                background-position: 100% 50%;
-            }
-            50% {
-                background-position: 0% 50%;
-            }
-            75% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-ul {
-    z-index:999;
-    display: flex;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000000;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin-left:-8px;
-    background: rgba(255, 255, 255, 0.418);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 12px 18px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #0000001e;
-}
-
-.active {
-    background-color: #01fcc5;
-}
-
-.card {
-    width: 80%;
-    height: auto;
-    padding: 2rem;
-    border-radius: 1rem;
-	background: rgba(255, 255, 255, .7);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-}
-
-.card{
-  backdrop-filter: blur(6px) saturate(161%);
-  -webkit-backdrop-filter: blur(6px) saturate(161%);
-  background-color: rgba(255,254,161,0.33);
-  border-radius: 21px;
-  border: 1px solid rgba(209, 213, 219, 0.3)
-}
-
-.card-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: .5rem;
-  font-size: 1.5rem;
-}
-
-a {
-  color: #4d4ae8;
-  text-decoration: none;
-}
-
-div{
-    margin: 5% auto;
-}
-
-p{
-    font-size: 1.3rem;  
-}
-
-.vertical-line{
-    display: inline-block;
-    border-left: 1px solid #ccc;
-    margin: 0px;
-    height: 48px;
-}
-
-.demo1 {
-	border-left: 2px solid #0400ff;
-	border-top: 2px solid #0004ff;
-	border-right: 3px solid #000;
-	border-bottom: 3px solid #000;  
-}
-
-.to {
-  text-shadow: 1px 1px 1px black,-1px -1px 1px white;
-}
-
-.coin {
-	text-align: center;
-	margin: 0 auto;
-}
-
-  .footer{
-        height: 150px;
-        text-align: center;
-        font-size: 16px;
-        padding: 0px 100px;
-        position: relative;
-    }
-    .footer{
-      cursor: pointer;
-    }
-    .copyright{
-      font-size: 12px;
-    }
-    .info{
-      font-size: 14px;
-      color: #000000;
-      line-height: 25px;
-    }
-    .footer .scroll{
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border-radius: 5px;
-      border:2px solid #eaeaea;
-      /* background-color: rgba(216, 16, 109,0.6); */
-      position: absolute;
-      left: 5%;
-      top: -25px;
-      z-index: 10;
-      animation: scrollA infinite 20s linear alternate;
-    }
-    @keyframes scrollA {
-      0% {left: 5%;transform: rotate(180deg);};
-      10% {left: 5%;transform: rotate(270deg);}
-      20% {left: 5%;transform: rotate(450deg);}
-      25% {left: 10%;transform: rotate(540deg);}
-      30% {left: 20%;transform: rotate(720deg);}
-      35% {left: 30%;transform: rotate(900deg);}
-      40% {left: 40%;transform: rotate(1080deg);}
-      45% {left: 50%;transform: rotate(1260deg);}
-      50% {left: 60%;transform: rotate(1440deg);}
-      55% {left: 70%;transform: rotate(1620deg);}
-      60% {left: 80%;transform: rotate(1800deg);}
-      80% {left: 90%;transform: rotate(2610deg);}
-      90% {left: 90%;transform: rotate(2340deg);}
-      100% {left: 90%;transform: rotate(2520deg);}
-    }
-
-</style>
-</head>
-<body>
-
-<ul>
-    <li><a class="active demo1 to">Goutou Studio</a></li>
-	<li><a href="https://discord.gg/TEFHeQqe">Discord</a></li>
-	<li><a href="#main-info">社区介绍</a></li>	
-	<li><a href="https://www.ixigua.com/home/2053495048635976?list_entrance=homepage">西瓜账号</a></li>	
-	<li><a href="#main-news">社区新闻</a></li>
-	<li><a href="#main-member">社区成员</a></li>
-	<li><a href="#main-contact">联系方式</a></li>
-	<li><a href="products.html">产品</a></li>
-	<li><a href="http://jitianyu8866.ysepan.com/">资源站</a></li>
-  <li><a href="about.html">关于</a></li>
-</ul>
-
-<div class="card demo1">
-    <h3 class="card-title">Goutou Studio 社区</h3>
-	<h3 class="card-title" style="margin: 0 auto;">每个计算机科技爱好者的聚集之地</h3>
-	
-	<a name="main-info" style="font-size: 1.6rem;"><strong>社区介绍：</strong></a>
-	<p class="coin">GoutouStudio（又名狗头工作室） 社区是一个致力于软件和系统开发的社区。于 2022 年 7 月创立，我们的目标是为开发者、设计师和其他相关专业人士提供一个交流、学习和分享的平台。
-       在 GoutouStudio 社区，你可以找到丰富的资源，包括教程、文档、代码示例等。我们鼓励成员积极分享自己的经验、知识和项目，以促进共同成长和进步。此外，社区还组织各种活动，如线上研讨会、系统研讨会和项目分享会等，以帮助成员提升技能、拓展人脉。
-       我们相信，通过合作和共同努力，我们可以推动软件和系统开发领域的发展，为社会带来积极的影响。欢迎加入我们的社区，一起探索技术的边界，创造更美好的未来！</p>
-	
-	<div></div>
-	
-	<a name="main-news" style="font-size: 1.6rem;"><strong>社区新闻：</strong></a>
-	<p style="margin: 0 auto;">top01 2024-01-17:我们的域名改为 https://jitianyu.sdos.top。</p>
-	<p style="margin: 0 auto;">top02 2024-01-15:正式开始研究对于SpaceOS的32位真彩色工作。</p>
-	<p style="margin: 0 auto;">top03 2024-01-13:好家伙SpaceOS没法用了黑屏了，但是修复了！</p>
-	<p style="margin: 0 auto;">top04 2024-01-11:SpaceOS 1.0 Beta4发布！</p>
-	<p style="margin: 0 auto;">top05 2023-12月:他妈的终于创建好这个静态网页了。</p>
-	<div></div>
-	
-	<a name="main-member" style="font-size: 1.6rem;"><strong>社区成员：</strong></a>
-	<p class="coin">MicroFish:</p>
-	<p class="coin">计算机程序开发和系统开发</p>
-	<p class="coin">JiTianYu：</p>
-	<p class="coin">创始人，研究软件和系统</p>
-	<div></div>
-
-	<a name="main-contact" style="font-size: 1.6rem;"><strong>联系方式：</strong></a>
-	<p class="coin">邮箱：goutouos8888@outlook.com 或 a13665183425@163.com</p>
-	<p class="coin">电话：13665183425</p>
-	<p class="coin">微信：JiTianY8666</p>
-	
-</div>
-
-
-<div class='footer'>
-      <span class="scroll"></span>
-      <!-- <span id="star-five" class="scroll"></span> -->
-      <el-divider></el-divider>
-      <span>网站中的所有商标等均由ViudiraTech和GoutouStudio所有。</span>
-      <el-divider direction="vertical"></el-divider>
-      <br/>
-      <br/>
-      <span class="copyright">Copyright 2020-2024 Goutou Studio & ViudiraTech.</span>
-      <el-drawer
-        :visible.sync="drawer"
-        :direction="direction"
-        :before-close="handleClose">
-        <p class='info'>
-          <i class="el-icon-phone"></i>需要更多信息请咨询我们！<br/>
-          <i class="el-icon-message"></i>"每个计算机科技爱好者的聚集之地"<br/>
-        </p>
-      </el-drawer>
-	</div>
-</body>
-</html>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<link rel="icon" href="./rec/favicon.ico">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="JavaScript/main.js"></script>
+
+<title>Goutou Studio</title>
+
+<style>
+
+
+
+body {
+
+      background: linear-gradient(-45deg, #0920ec, #bd1bcc, #1512c7, #ff00bf);
+
+      background-size: 400% 400%;
+
+      animation: gradientAnimation 15s ease infinite;
+
+      font-family: 'Inter', sans-serif;
+
+   }
+
+@keyframes gradientAnimation {
+
+            0% {
+
+                background-position: 0% 50%;
+
+            }
+
+            25% {
+
+                background-position: 100% 50%;
+
+            }
+
+            50% {
+
+                background-position: 0% 50%;
+
+            }
+
+            75% {
+
+                background-position: 100% 50%;
+
+            }
+
+            100% {
+
+                background-position: 0% 50%;
+
+            }
+
+        }
+
+
+
+ul {
+
+    z-index:999;
+
+    display: flex;
+
+    justify-content: center;
+
+    font-family: 'Inter', sans-serif;
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    background-color: #000000;
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    margin-left:-8px;
+
+    background: rgba(255, 255, 255, 0.418);
+
+	-webkit-backdrop-filter: blur(10px);
+
+	backdrop-filter: blur(10px);
+
+}
+
+
+
+li {
+
+    float: left;
+
+}
+
+
+
+li a {
+
+    display: block;
+
+    color: rgb(0, 0, 0);
+
+    text-align: center;
+
+    padding: 12px 18px;
+
+    text-decoration: none;
+
+}
+
+
+
+li a:hover:not(.active) {
+
+    background-color: #0000001e;
+
+}
+
+
+
+.active {
+
+    background-color: #01fcc5;
+
+}
+
+
+
+.card {
+
+    width: 80%;
+
+    height: auto;
+
+    padding: 2rem;
+
+    border-radius: 1rem;
+
+	background: rgba(255, 255, 255, .7);
+
+	-webkit-backdrop-filter: blur(10px);
+
+	backdrop-filter: blur(10px);
+
+}
+
+
+
+.card{
+
+  backdrop-filter: blur(6px) saturate(161%);
+
+  -webkit-backdrop-filter: blur(6px) saturate(161%);
+
+  background-color: rgba(255,254,161,0.33);
+
+  border-radius: 21px;
+
+  border: 1px solid rgba(209, 213, 219, 0.3)
+
+}
+
+
+
+.card-title {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin-bottom: .5rem;
+
+  font-size: 1.5rem;
+
+}
+
+
+
+a {
+
+  color: #4d4ae8;
+
+  text-decoration: none;
+
+}
+
+
+
+div{
+
+    margin: 5% auto;
+
+}
+
+
+
+p{
+
+    font-size: 1.3rem;  
+
+}
+
+
+
+.vertical-line{
+
+    display: inline-block;
+
+    border-left: 1px solid #ccc;
+
+    margin: 0px;
+
+    height: 48px;
+
+}
+
+
+
+.demo1 {
+
+	border-left: 2px solid #0400ff;
+
+	border-top: 2px solid #0004ff;
+
+	border-right: 3px solid #000;
+
+	border-bottom: 3px solid #000;  
+
+}
+
+
+
+.to {
+
+  text-shadow: 1px 1px 1px black,-1px -1px 1px white;
+
+}
+
+
+
+.coin {
+
+	text-align: center;
+
+	margin: 0 auto;
+
+}
+
+
+
+  .footer{
+
+        height: 150px;
+
+        text-align: center;
+
+        font-size: 16px;
+
+        padding: 0px 100px;
+
+        position: relative;
+
+    }
+
+    .footer{
+
+      cursor: pointer;
+
+    }
+
+    .copyright{
+
+      font-size: 12px;
+
+    }
+
+    .info{
+
+      font-size: 14px;
+
+      color: #000000;
+
+      line-height: 25px;
+
+    }
+
+    .footer .scroll{
+
+      display: inline-block;
+
+      width: 20px;
+
+      height: 20px;
+
+      border-radius: 5px;
+
+      border:2px solid #eaeaea;
+
+      /* background-color: rgba(216, 16, 109,0.6); */
+
+      position: absolute;
+
+      left: 5%;
+
+      top: -25px;
+
+      z-index: 10;
+
+      animation: scrollA infinite 20s linear alternate;
+
+    }
+
+    @keyframes scrollA {
+
+      0% {left: 5%;transform: rotate(180deg);};
+
+      10% {left: 5%;transform: rotate(270deg);}
+
+      20% {left: 5%;transform: rotate(450deg);}
+
+      25% {left: 10%;transform: rotate(540deg);}
+
+      30% {left: 20%;transform: rotate(720deg);}
+
+      35% {left: 30%;transform: rotate(900deg);}
+
+      40% {left: 40%;transform: rotate(1080deg);}
+
+      45% {left: 50%;transform: rotate(1260deg);}
+
+      50% {left: 60%;transform: rotate(1440deg);}
+
+      55% {left: 70%;transform: rotate(1620deg);}
+
+      60% {left: 80%;transform: rotate(1800deg);}
+
+      80% {left: 90%;transform: rotate(2610deg);}
+
+      90% {left: 90%;transform: rotate(2340deg);}
+
+      100% {left: 90%;transform: rotate(2520deg);}
+
+    }
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<ul>
+
+    <li><a class="active demo1 to">Goutou Studio</a></li>
+
+	<li><a href="https://discord.gg/TEFHeQqe">Discord</a></li>
+
+	<li><a href="#main-info">社区介绍</a></li>	
+
+	<li><a href="https://www.ixigua.com/home/2053495048635976?list_entrance=homepage">西瓜账号</a></li>	
+
+	<li><a href="#main-news">社区新闻</a></li>
+
+	<li><a href="#main-member">社区成员</a></li>
+
+	<li><a href="#main-contact">联系方式</a></li>
+
+	<li><a href="products.html">产品</a></li>
+
+	<li><a href="http://jitianyu8866.ysepan.com/">资源站</a></li>
+
+  <li><a href="about.html">关于</a></li>
+
+</ul>
+
+
+
+<div class="card demo1">
+
+    <h3 class="card-title">Goutou Studio 社区</h3>
+
+	<h3 class="card-title" style="margin: 0 auto;">每个计算机科技爱好者的聚集之地</h3>
+
+	
+
+	<a name="main-info" style="font-size: 1.6rem;"><strong>社区介绍：</strong></a>
+
+	<p class="coin">GoutouStudio（又名狗头工作室） 社区是一个致力于软件和系统开发的社区。于 2022 年 7 月创立，我们的目标是为开发者、设计师和其他相关专业人士提供一个交流、学习和分享的平台。
+
+       在 GoutouStudio 社区，你可以找到丰富的资源，包括教程、文档、代码示例等。我们鼓励成员积极分享自己的经验、知识和项目，以促进共同成长和进步。此外，社区还组织各种活动，如线上研讨会、系统研讨会和项目分享会等，以帮助成员提升技能、拓展人脉。
+
+       我们相信，通过合作和共同努力，我们可以推动软件和系统开发领域的发展，为社会带来积极的影响。欢迎加入我们的社区，一起探索技术的边界，创造更美好的未来！</p>
+
+	
+
+	<div></div>
+
+	
+
+	<a name="main-news" style="font-size: 1.6rem;"><strong>社区新闻：</strong></a>
+
+	<p style="margin: 0 auto;">top01 2024-01-20:32位真彩色目前无进展，我们的域名已经改为 https://goutou.lovepx.team</p>
+
+	<p style="margin: 0 auto;">top02 2024-01-15:正式开始研究对于SpaceOS的32位真彩色工作。</p>
+
+	<p style="margin: 0 auto;">top03 2024-01-13:好家伙SpaceOS没法用了黑屏了，但是修复了！</p>
+
+	<p style="margin: 0 auto;">top04 2024-01-11:SpaceOS 1.0 Beta4发布！</p>
+
+	<p style="margin: 0 auto;">top05 2023-12月:他妈的终于创建好这个静态网页了。</p>
+
+	<div></div>
+
+	
+
+	<a name="main-member" style="font-size: 1.6rem;"><strong>社区成员：</strong></a>
+
+	<p class="coin">MicroFish:</p>
+
+	<p class="coin">计算机程序开发和系统开发</p>
+
+	<p class="coin">JiTianYu：</p>
+
+	<p class="coin">创始人，研究软件和系统</p>
+
+	<div></div>
+
+
+
+	<a name="main-contact" style="font-size: 1.6rem;"><strong>联系方式：</strong></a>
+
+	<p class="coin">邮箱：goutouos8888@outlook.com 或 a13665183425@163.com</p>
+
+	<p class="coin">电话：13665183425</p>
+
+	<p class="coin">微信：JiTianY8666</p>
+
+	
+
+</div>
+
+
+
+
+
+<div class='footer'>
+
+      <span class="scroll"></span>
+
+      <!-- <span id="star-five" class="scroll"></span> -->
+
+      <el-divider></el-divider>
+
+      <span>网站中的所有商标等均由ViudiraTech和GoutouStudio所有。</span>
+
+      <el-divider direction="vertical"></el-divider>
+
+      <br/>
+
+      <br/>
+
+      <span class="copyright">Copyright 2020-2024 Goutou Studio & ViudiraTech.</span>
+
+      <el-drawer
+
+        :visible.sync="drawer"
+
+        :direction="direction"
+
+        :before-close="handleClose">
+
+        <p class='info'>
+
+          <i class="el-icon-phone"></i>需要更多信息请咨询我们！<br/>
+
+          <i class="el-icon-message"></i>"每个计算机科技爱好者的聚集之地"<br/>
+
+        </p>
+
+      </el-drawer>
+
+	</div>
+
+</body>
+
+</html>
+
